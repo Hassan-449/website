@@ -1,0 +1,229 @@
+/* Global Styles */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --text-color: #333;
+    --background-color: #f5f5f5;
+    --border-radius: 8px;
+    --font-family: 'Arial', sans-serif;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	display:flex;
+    font-family: var(--font-family);
+    color: black;
+    background-color: black;
+    line-height: 1.6;
+	padding:0;
+	max-height:auto-fit;
+	max-width:auto-fit;
+	  
+}
+.grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+	
+}
+
+header.header {
+text-align: center;
+padding: 20px;
+background-color: #14325A;
+color: white;
+
+box-shadow: var(--box-shadow);
+font-family: Algerian;
+ text-align: center;
+}
+
+header img {
+    max-width: 150px;
+    
+    margin-bottom: 1rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+
+.nav_menu {
+display: flex;
+background-color: black;
+justify-content: center;
+margin-top: 0;
+}
+.nav_menu a {
+color: white;
+padding: 12px 20px;
+text-align: center;
+text-decoration: none;
+font-family: 'Algerian', serif;
+}
+
+.nav_menu a:hover {
+background-color: white;
+color: green;
+transition: color 0.3s;
+}
+
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: salmon;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+section h2 {
+    font-size: 35px;
+    color: gray);
+    margin-bottom: rem;
+    position: relative;
+    text-align: center;
+	font-family:Algerian;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -0.5rem;
+    background-color:white;
+    border-radius: 5px;
+}
+
+
+.schools-section .grid-container {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.schools-section .box {
+    background-color: #14325A;;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: var(--border-radius);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 5);
+    transition: transform 0.9s, box-shadow 0.9s;
+	font-family:Algerian;
+	color:white;
+}
+
+.schools-section .box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0,5);
+}
+
+.schools-section .box img {
+    max-width: 100%;
+    margin-top: 1.3rem;
+    border-radius: var(--border-radius);
+}
+
+
+.hobbies-section .hobbies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.hobbies-section .hobby {
+    flex: 1 1 calc(33.333% - 1rem);
+    background-color:#14325A;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: var(--border-radius);
+    transition: transform 0.3s;
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 5);
+    transition: transform 0.9s, box-shadow 0.9s;
+	font-family:Algerian;
+}
+
+.hobbies-section .hobby:hover {
+    transform: scale(1.05);
+}
+
+.hobbies-section .hobby h3 {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+
+
+footer.nav_footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color:black;
+    color: white;
+    border-radius: var(--border-radius);
+    margin-top: 2rem;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 5);
+	font-family:Algerian;
+}
+
+footer.nav_footer .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+footer.nav_footer .footer-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+footer.nav_footer .footer-links a:hover {
+    color: green;
+}
+.hobbies-section .hobbies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.career-section .career {
+    flex: 1 1 calc(33.333% - 1rem);
+    background-color:#14325A;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: var(--border-radius);
+    transition: transform 0.3s;
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 5);
+    transition: transform 0.9s, box-shadow 0.9s;
+	font-family:Algerian;
+	color:white;
+}
+
+.career-section .career:hover {
+    transform: scale(1.05);
+}
+
+.career-section .career h3 {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
